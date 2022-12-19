@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.InterViewPortal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.InterViewPortal.JobDetailsActivity"
+            android:parentActivityName="com.example.InterViewPortal.AllJobActivity"/>
+        <activity android:name="com.example.InterViewPortal.InsertJobPostActivity"
+            android:parentActivityName="com.example.InterViewPortal.PostJobActivity"/>
+        <activity android:name="com.example.InterViewPortal.PostJobActivity"
+            android:parentActivityName="com.example.InterViewPortal.HomeActivity"/>
+        <activity android:name="com.example.InterViewPortal.AllJobActivity"
+            android:parentActivityName="com.example.InterViewPortal.HomeActivity"/>
+
+        <activity android:name="com.example.InterViewPortal.HomeActivity" />
+        <activity android:name="com.example.InterViewPortal.RegistrationActivity" />
+        <activity android:name="com.example.InterViewPortal.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
